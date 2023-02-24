@@ -19,7 +19,7 @@ const Header = () => {
             {menuItems}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <a className="btn btn-ghost normal-case text-xl">EyeGlass</a>
     {/* <Link to="/"className="btn btn-ghost normal-case text-xl">
         <img src='' alt='' />
     </Link> */}

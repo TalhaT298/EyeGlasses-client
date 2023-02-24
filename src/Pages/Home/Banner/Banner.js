@@ -7,7 +7,7 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div className="carousel w-full">
+        <div className="carousel w-full py-12">
   <div id="slide1" className="carousel-item relative w-full">
     <div className='carousel-imgaege'>
         <img src={img1} alt='' className="w-full" />
@@ -15,16 +15,15 @@ const Banner = () => {
    
     <div className="absolute flex justify-end transform -translate-y-1/2 left-24  top-1/4 ">
         <h1 className='text-6xl font-bold text-white'>
-            Affordable <br/>
-            Price for car <br/>
-            Servicing
+            BE SAFE IN <br/>
+            EVERY STYLE
         </h1>
     </div>
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
-        <p className='text-xl text-white'> wwww</p>
+        <p className='text-xl text-white'>Best Sunglasses is here <br/>@Dhaka,Bangladesh</p>
     </div>
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-3/4 ">
-    <button className="btn btn-outline">Button</button>
+    <button className="btn btn-outline">Shop Sunglass</button>
     </div>
     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 pt-12">
       <a href="#slide4" className="btn btn-circle mr-5 ">❮</a> 
