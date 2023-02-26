@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import logo  from '../../../assets/logo.svg'
+import logo  from '../../../assets/Untitled design (41).png';
+import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
-
+    const {user}=useContext(AuthContext);
     const menuItems= <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
-        <li className='font-semibold'><Link to='/login'>Login</Link></li>
+        {
+          user?.email?
+          <>
+          <li className='font-semibold'><Link to='/orders'>Orders</Link></li>
+          </>
+          :
+          <li className='font-semibold'><Link to='/login'>Login</Link></li>
+        }
     </>
 
     return (
@@ -20,10 +28,10 @@ const Header = () => {
             {menuItems}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">EyeGlass</a>
-    {/* <Link to="/"className="btn btn-ghost normal-case text-xl">
-        <img src='' alt='' />
-    </Link> */}
+    {/* <a className="btn btn-ghost normal-case text-xl">EyeGlass</a> */}
+    <Link to="/"className="btn btn-ghost normal-case text-xl w-32">
+        <img src={logo} alt='' />
+    </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
