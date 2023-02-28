@@ -5,7 +5,7 @@ import img from '../../assets/images/login/Untitled design (40).png';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const SignUp = () => {
-    const {createUser}=useContext(AuthContext)
+    const {createUser}=useContext(AuthContext);
     const handleSignUp =event =>{
         event.preventDefault();
         const form=event.target;

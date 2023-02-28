@@ -49,17 +49,31 @@ const Checkout = () => {
     return (
         <div>
             <form onSubmit={handlePlaceOrder}>
+
+        {/* image add */}
+
+        <div className="carousel w-full">
+  <div className="carousel-item relative py-6 w-full">
+    <img src="https://i.ibb.co/XSP0pMK/Special-Sale.png" className="w-full" />
+  </div> 
+</div>
+
+        {/* image end */}
+
+      
                 <h2 className='text-4xl'>Your order: {title}</h2>
-                <h2 className='text-3xl'>Price: {price}</h2>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+                <h2 className='text-3xl py-2'>Price: {price}</h2>
+            <div className='grid grid-cols-1 lg:grid-cols-2 py-4 gap-4'>
             <input name='firstName' type="text" placeholder="First Name" className="input input-ghost w-full input-bordered" />
             <input name='lastName' type="text" placeholder="Last Name" className="input input-ghost w-full input-bordered" />
             <input name='phone' type="text" placeholder="Phone Number" className="input input-ghost w-full input-bordered" required/>
             <input name='email' type="text" placeholder="Your Email" defaultValue={user?.email} className="input input-ghost w-full input-bordered" readOnly />
             </div>
-            <textarea name='message' className="textarea textarea-bordered h-24 w-full" placeholder="Your Message" required></textarea>
+            <textarea name='message' className="textarea textarea-bordered h-24 w-full " placeholder="Your Message" required></textarea>
 
+            <div className='py-2'>
             <input className='btn' type="submit" value="Place Your Order" />
+            </div>
             </form>
         </div>
     );

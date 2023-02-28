@@ -7,6 +7,8 @@ const Header = () => {
     const {user}=useContext(AuthContext);
     const menuItems= <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
+        <li className='font-semibold'><Link to='/features'>Features</Link></li>
+        <li className='font-semibold'><Link to='/'>Big Deal</Link></li>
         {
           user?.email?
           <>
@@ -15,6 +17,8 @@ const Header = () => {
           :
           <li className='font-semibold'><Link to='/login'>Login</Link></li>
         }
+        
+        
     </>
 
     return (
@@ -39,7 +43,7 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-  <button className="btn btn-outline">Button</button>
+  <button className="btn btn-outline"><Link to="/started">Get Started</Link></button>
   </div>
 </div>
     );
