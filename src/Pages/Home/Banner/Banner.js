@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img1 from '../../../assets/images/banner/1.jpg';
 import img2 from '../../../assets/images/banner/2.jpg';
 import img3 from '../../../assets/images/banner/3.jpg';
 import img4 from '../../../assets/images/banner/4.jpg';
 import './Banner.css'
+import { FaShoppingCart } from "react-icons/fa";
 
 const Banner = () => {
     return (
@@ -19,11 +21,11 @@ const Banner = () => {
             EVERY STYLE
         </h1>
     </div>
-    <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
+    {/* <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
         <p className='text-xl text-white'>Best Sunglasses is here <br/>@Dhaka,Bangladesh</p>
-    </div>
+    </div> */}
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-3/4 ">
-    <button className="btn btn-outline">Shop Sunglass</button>
+    <Link to='shopmore'><button className="btn btn-outline" data-aos-duration="1000">Shop Sunglass<FaShoppingCart size='2rem'/></button></Link>
     </div>
     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 pt-12">
       <a href="#slide4" className="btn btn-circle mr-5 ">❮</a> 
@@ -43,9 +45,9 @@ const Banner = () => {
             Servicing
         </h1>
     </div>
-    <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
+    {/* <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
         <p className='text-xl text-white'> wwww</p>
-    </div>
+    </div> */}
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-3/4 ">
     <button className="btn btn-outline">Button</button>
     </div>
@@ -66,9 +68,9 @@ const Banner = () => {
             Servicing
         </h1>
     </div>
-    <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
+    {/* <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
         <p className='text-xl text-white'> wwww</p>
-    </div>
+    </div> */}
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-3/4 ">
     <button className="btn btn-outline">Button</button>
     </div>
@@ -89,9 +91,9 @@ const Banner = () => {
             Servicing
         </h1>
     </div>
-    <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
+    {/* <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
         <p className='text-xl text-white'> wwww</p>
-    </div>
+    </div> */}
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-3/4 ">
     <button className="btn btn-outline">Button</button>
     </div>

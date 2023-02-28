@@ -6,7 +6,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Glasses = () => {
     const [glasses,setglasses]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/services')
+        fetch('https://again-server.vercel.app/services')
         .then(res=>res.json())
         .then(data =>setglasses(data))
     },[])

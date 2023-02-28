@@ -30,14 +30,14 @@ const Footer = () => {
         <span className="footer-title">Company</span> 
         <a className="link link-hover">About us</a> 
         <a className="link link-hover">Contact</a> 
-        <a className="link link-hover">Jobs</a> 
-        <a className="link link-hover">Press kit</a>
+        <a className="link link-hover">Features</a> 
+        <a className="link link-hover">Big Deal</a>
       </div> 
       <div>
         <span className="footer-title">Legal</span> 
         <a className="link link-hover">Terms of use</a> 
         <a className="link link-hover">Privacy policy</a> 
-        <a className="link link-hover">Cookie policy</a>
+        <a className="link link-hover">Important</a>
       </div>
     </footer>
     );

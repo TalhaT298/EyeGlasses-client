@@ -2,20 +2,22 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo  from '../../../assets/Untitled design (41).png';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import { BsBoxArrowRight } from "react-icons/bs";
+
 
 const Header = () => {
     const {user}=useContext(AuthContext);
     const menuItems= <>
-        <li className='font-semibold'><Link to='/'>Home</Link></li>
-        <li className='font-semibold'><Link to='/features'>Features</Link></li>
-        <li className='font-semibold'><Link to='/'>Big Deal</Link></li>
+        <li className='font-semibold '><Link to='/'>Home</Link></li>
+        <li className='font-semibold '><Link to='/features'>Features</Link></li>
+        <li className='font-semibold '><Link to='/'>Big Deal</Link></li>
         {
           user?.email?
           <>
-          <li className='font-semibold'><Link to='/orders'>Orders</Link></li>
+          <li className='font-semibold '><Link to='/orders'>Orders</Link></li>
           </>
           :
-          <li className='font-semibold'><Link to='/login'>Login</Link></li>
+          <li className='font-semibold' ><Link to='/login'>Login</Link></li>
         }
         
         
@@ -33,7 +35,7 @@ const Header = () => {
       </ul>
     </div>
     {/* <a className="btn btn-ghost normal-case text-xl">EyeGlass</a> */}
-    <Link to="/"className="btn btn-ghost normal-case text-xl w-32">
+    <Link to="/"className="btn btn-ghost normal-case text-xl pb-20 w-40">
         <img src={logo} alt='' />
     </Link>
   </div>
@@ -42,8 +44,8 @@ const Header = () => {
         {menuItems}
     </ul>
   </div>
-  <div className="navbar-end">
-  <button className="btn btn-outline"><Link to="/started">Get Started</Link></button>
+  <div className="navbar-end ">
+  <button className="btn btn-outline"><Link to="/started"><BsBoxArrowRight size='2.5rem'/></Link></button>
   </div>
 </div>
     );
