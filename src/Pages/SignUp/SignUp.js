@@ -20,7 +20,7 @@ const SignUp = () => {
         .catch(err => console.error(err));
     }
     return (
-        <div className="hero w-full my-20">
+        <div className="hero w-full my-20 text-orange-200">
         <div className="hero-content grid gap-24 md:grid-cols-2 flex-col lg:flex-row">
           <div className="text-center lg:text-left">
             
@@ -29,23 +29,23 @@ const SignUp = () => {
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-20">
             <from onSubmit={handleSignUp} className="card-body">
             <h1 className="text-5xl text-center font-bold">Sign Up</h1>
-              <div className="form-control">
+              <div className="form-control text-orange-200">
                 <label className="label">
-                  <span className="label-text">Name</span>
+                  <span className="label-text text-orange-200">Name</span>
                 </label>
                 <input type="text" name='name' placeholder="Your Name" className="input input-bordered" />
               </div>
 
-              <div className="form-control">
+              <div className="form-control text-orange-200">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-orange-200">Email</span>
                 </label>
                 <input type="text" name='email' placeholder="email" className="input input-bordered" required/>
               </div>
 
-              <div className="form-control">
+              <div className="form-control text-orange-200">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-orange-200">Password</span>
                 </label>
                 <input type="text" name='password' placeholder="password" className="input input-bordered" />
               </div>

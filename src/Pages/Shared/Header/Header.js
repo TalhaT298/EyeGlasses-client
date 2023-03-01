@@ -8,16 +8,16 @@ import { BsBoxArrowRight } from "react-icons/bs";
 const Header = () => {
     const {user}=useContext(AuthContext);
     const menuItems= <>
-        <li className='font-semibold '><Link to='/'>Home</Link></li>
-        <li className='font-semibold '><Link to='/features'>Features</Link></li>
-        <li className='font-semibold '><Link to='/'>Big Deal</Link></li>
+        <li className='font-semibold text-orange-200'><Link to='/'>Home</Link></li>
+        <li className='font-semibold text-orange-200'><Link to='/features'>Features</Link></li>
+        <li className='font-semibold text-orange-200'><Link to='/'>Big Deal</Link></li>
         {
           user?.email?
           <>
-          <li className='font-semibold '><Link to='/orders'>Orders</Link></li>
+          <li className='font-semibold text-orange-200'><Link to='/orders'>Orders</Link></li>
           </>
           :
-          <li className='font-semibold' ><Link to='/login'>Login</Link></li>
+          <li className='font-semibold text-orange-200' ><Link to='/login'>Login</Link></li>
         }
         
         
@@ -45,7 +45,7 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end ">
-  <button className="btn btn-outline"><Link to="/started"><BsBoxArrowRight size='2.5rem'/></Link></button>
+  <button className="btn btn-outline text-orange-200"><Link to="/started"><BsBoxArrowRight size='2.5rem'/></Link></button>
   </div>
 </div>
     );

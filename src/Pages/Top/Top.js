@@ -5,8 +5,8 @@ const Top = () => {
         <div>
             
             <div className='text-center py-6 '>
-            <p className='text-4xl font-bold text-yellow-600 ' data-aos="flip-left">Top sunglass brands are here</p>
-            <p className='text-1xl font-semibold text-yellow-600'>Grab Fast!</p>
+            <p className='text-4xl font-bold text-orange-200 ' data-aos="flip-left">Top sunglass brands are here</p>
+            <p className='text-1xl font-semibold text-orange-100'>Grab Fast!</p>
             </div>
         <div>
             <div className="carousel w-full pb-8">

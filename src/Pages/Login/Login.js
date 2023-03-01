@@ -29,27 +29,27 @@ const Login = () => {
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-20">
       <from onSubmit={handleLogin} className="card-body">
-      <h1 className="text-5xl text-center font-bold">Login now</h1>
+      <h1 className="text-5xl text-center font-bold text-orange-200">Login now</h1>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Email</span>
+            <span className="label-text text-orange-200">Email</span>
           </label>
           <input type="text" name='email' placeholder="email" className="input input-bordered" />
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Password</span>
+            <span className="label-text text-orange-200">Password</span>
           </label>
           <input type="text" name='password' placeholder="password" className="input input-bordered" />
           <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+            <a href="#" className="label-text-alt link link-hover text-orange-200" >Forgot password?</a>
           </label>
         </div>
         <div className="form-control mt-6">
             <input className='btn btn-primary' type="submit" value="Login" />
         </div>
       </from>
-      <p className='text-center'>New to EyeGlass <Link className='text-orange-800 font-bold' to='/signup'>Sign Up</Link></p>
+      <p className='text-center text-orange-200'>New to EyeGlass <Link className='text-orange-800 font-bold' to='/signup'>Sign Up</Link></p>
     </div>
   </div>
 </div>

@@ -4,14 +4,14 @@ const EyeglassCustomers = () => {
     return (
         <div className='py-6'>
             <div className='text-center py-6'>
-            <p className='text-4xl font-bold text-yellow-600 '>EyeGlass Customers</p>
+            <p className='text-4xl font-bold text-orange-200 '>EyeGlass Customers</p>
             </div>
             <div className="card lg:card-side bg-base-100 shadow-xl">
   
-  <div className="card-body w-1/2 pr-8">
+  <div className="card-body w-1/2 pr-8 text-orange-200">
     <h1 className="card-title text-5xl">What Our Customer Says,</h1>
     <h1 className="card-title text-5xl">About Our Products</h1>
-    <div className='pt-8'>
+    <div className='pt-8 text-orange-100'>
     <p><FaLocationArrow size='1rem'/>1.Good Service and a great product.(Anna Forcella)</p>
     <p>2.Customer Service has been amazing and great support.(Alison Astey)</p>
     <p>3.Quick responses.(Germaine Ramiah)</p>
