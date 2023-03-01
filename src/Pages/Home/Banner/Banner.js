@@ -23,7 +23,7 @@ const Banner = () => {
         </h1> */}
     </div>
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
-    <p className='text-5xl font-bold text-white'>
+    <p className='sm:text-5xl lg-text-xl font-bold text-white'>
             BE SAFE IN
              <br/>
             
@@ -45,7 +45,7 @@ const Banner = () => {
     <Link to='shopmore'><button className="btn btn-outline text-orange-200" data-aos-duration="1000">Shop Sunglass<FaShoppingCart size='2rem'/></button></Link>
     </div>
     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0 pt-12">
-      <a href="#slide4" className="btn btn-circle mr-5 ">❮</a> 
+      <a href="#slide4" className="btn btn-circle mr-5">❮</a> 
       <a href="#slide2" className="btn btn-circle">❯</a>
     </div>
   </div> 
@@ -62,7 +62,7 @@ const Banner = () => {
         </h1> */}
     </div>
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
-    <p className='text-5xl font-bold text-white'>
+    <p className='sm:text-5xl lg-text-xl font-bold text-white'>
             BE SAFE IN
              <br/>
             
@@ -101,7 +101,7 @@ const Banner = () => {
         </h1> */}
     </div>
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
-    <p className='text-5xl font-bold text-white'>
+    <p className='sm:text-5xl lg-text-xl font-bold text-white'>
             BE SAFE IN
              <br/>
             
@@ -140,7 +140,7 @@ const Banner = () => {
         </h1> */}
     </div>
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24  top-1/2 ">
-    <p className='text-5xl font-bold text-white'>
+    <p className='sm:text-5xl lg-text-xl font-bold text-white'>
             BE SAFE IN
              <br/>
             
